@@ -405,7 +405,10 @@ def get_resource(
     `to_path` but it does not have the correct md5 sum. An exception will also
     be thrown is a directory is present at `to_path`
     """
-
+    # Amir
+    print(f"to_path: {to_path}")
+    print(f"resource name: {resource_name}")
+    # Rima
     # We apply a lock for a specific resource. This is to avoid circumstances
     # where multiple instances of gem5 are running and trying to obtain the
     # same resources at once. The timeout here is somewhat arbitarily put at 15
