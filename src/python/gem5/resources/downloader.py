@@ -148,9 +148,15 @@ def _get_resources_json() -> Dict:
 
     :returns: The Resources JSON (as a Python Dictionary).
     """
-
-    path = os.getenv("GEM5_RESOURCE_JSON", _get_resources_json_uri())
+    
+    # enforce using existing resource file
+    # Amir
+    path = "/workdir/resource/resources.json" # os.getenv("GEM5_RESOURCE_JSON", _get_resources_json_uri())
+    # Rima
     to_return = _get_resources_json_at_path(path=path)
+    # Amir
+    print(f"JSON Content: {to_return}")
+    # Rima
 
     # If the current version pulled is not correct, look up the
     # "previous-versions" field to find the correct one.
