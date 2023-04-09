@@ -146,7 +146,7 @@ class Resource(AbstractResource):
 #                 "GEM5_RESOURCE_DIR", self._get_default_resource_dir()
 #             )
         # Amir
-        resource_directory = "/workdir/resource"
+        resource_directory = "/gcs/xcloud-shared/ayazdan/gem5/resources"
         # Rima
 
         if os.path.exists(resource_directory):
