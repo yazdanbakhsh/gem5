@@ -151,7 +151,7 @@ def _get_resources_json() -> Dict:
     
     # enforce using existing resource file
     # Amir
-    path = "/workdir/resource/resources.json" # os.getenv("GEM5_RESOURCE_JSON", _get_resources_json_uri())
+    path = "/gcs/xcloud-shared/ayazdan/gem5/resources/resources.json" # os.getenv("GEM5_RESOURCE_JSON", _get_resources_json_uri())
     # Rima
     to_return = _get_resources_json_at_path(path=path)
     # Amir
