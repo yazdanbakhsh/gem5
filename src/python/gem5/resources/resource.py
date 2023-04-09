@@ -141,10 +141,13 @@ class Resource(AbstractResource):
         thrown. True by default.
         """
 
-        if resource_directory == None:
-            resource_directory = os.getenv(
-                "GEM5_RESOURCE_DIR", self._get_default_resource_dir()
-            )
+#         if resource_directory == None:
+#             resource_directory = os.getenv(
+#                 "GEM5_RESOURCE_DIR", self._get_default_resource_dir()
+#             )
+        # Amir
+        resource_directory = "/workdir"
+        # Rima
 
         if os.path.exists(resource_directory):
             if not os.path.isdir(resource_directory):
